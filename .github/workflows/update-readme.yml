@@ -23,7 +23,6 @@ jobs:
 
       - name: Clone auto-readme repository
         run: |
-          cd ..
           git clone https://github.com/jerobas/auto-readme.git
           cd auto-readme
 
