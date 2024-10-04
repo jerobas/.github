@@ -53,4 +53,3 @@ jobs:
           git add readme.md
           git diff-index --quiet HEAD || git commit -m "Updated README from new commit"
           git push
-        working-directory: .github
