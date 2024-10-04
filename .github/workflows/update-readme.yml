@@ -40,7 +40,6 @@ jobs:
       # Step 5: Run the Python file that compares README
       - name: Run comparison script
         run: python compare_readme.py  # This is the Python file to compare and modify README if necessary
-        working-directory: auto-readme  # Ensure you're running the Python script in the right directory
 
       # Step 6: Check for changes and commit if needed
       - name: Commit and push changes if README was updated
