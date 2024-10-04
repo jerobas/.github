@@ -17,10 +17,13 @@ jobs:
       # Step 2: Clone the .github repository
       - name: Clone .github repository
         run: |
+          mkdir global-repo
+          cd global-repo
           git clone https://github.com/jerobas/.github.git
 
       - name: Clone auto-readme repository
         run: /
+          cd ..
           git clone https://github.com/jerobas/auto-readme.git
           cd auto-readme
 
