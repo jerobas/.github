@@ -1,10 +1,8 @@
 name: Update Organization Readme
 
+# This allows the workflow to be used as a reusable workflow
 on:
-  push:
-    branches: [ $default-branch ]
-  pull_request:
-    branches: [ $default-branch ]
+  workflow_call:
 
 jobs:
   update-readme:
