@@ -4,15 +4,20 @@ Bem-vindo à organização **Jerobas**! Aqui, você pode acompanhar os principai
 
 ## 🌟 Repositórios
 
-| Nome do Repositório                                                                                           | Descrição           | Linguagem Principal                                                 | CI/CD                                                                                                                        |
-| ------------------------------------------------------------------------------------------------------------- | ------------------- | ------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| [Retro Games NCURSES](https://github.com/jerobas/retro-games-ncurses)                                         | Retro Games em C | ![Linguagem](https://img.shields.io/badge/language-C-blue)          | ![CI/CD Status](https://img.shields.io/github/actions/workflow/status/jerobas/retro-games-ncurses/release.yml?branch=master) |
-| [LoL Queue](https://github.com/jerobas/lol-queue-app)                                                         | Auto Queue para o League of Legends | ![Linguagem](https://img.shields.io/badge/language-JavaScript-blue) | ![CI/CD Status](https://img.shields.io/github/actions/workflow/status/jerobas/lol-queue-app/release.yml?branch=master)       |
-| [Banco Be](https://github.com/jerobas/banco-be-ts)                                                        | Back End de um banco imobiliário | ![Linguagem](https://img.shields.io/badge/language-TypeScript-blue) | ![CI/CD Status](https://img.shields.io/github/actions/workflow/status/jerobas/banco-be-ts/pipeline.yml?branch=master)        |
-| [Banco Fe](https://github.com/jerobas/banco-fe) | Front End de um banco imobiliário | ![Linguagem](https://img.shields.io/badge/language-JavaScript-blue) | ![CI/CD Status](https://img.shields.io/github/actions/workflow/status/jerobas/banco-fe/pipeline.yml?branch=master)           |
-| [Web Components](https://github.com/jerobas/web-components)                                                 | Arquivos padrões para projetos WEB | ![Linguagem](https://img.shields.io/badge/language-JavaScript-blue) | ![CI/CD Status](https://img.shields.io/github/actions/workflow/status/jerobas/web-components/pipeline.yml?branch=master)     |
+[//]: # ()
+
+| Nome do Repositório | Descrição | Linguagem Principal | CI/CD |
+| --- | --- | :---: | --- |
+| [.github](https://github.com/jerobas/.github) | None | - | ![CI/CD Status](https://img.shields.io/github/actions/workflow/status/jerobas/.github/release.yml?branch=main) |
+| [minecraft-docker](https://github.com/jerobas/minecraft-docker) | Dockerfile para servidor Minecraft na AWS | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-plain.svg" alt="docker-icon" style="width: 28px; height: 28px;" /> | ![CI/CD Status](https://img.shields.io/github/actions/workflow/status/jerobas/minecraft-docker/release.yml?branch=main) |
+| [retro-games-ncurses](https://github.com/jerobas/retro-games-ncurses) | Retro Games em C | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-plain.svg" alt="c-icon" style="width: 28px; height: 28px;" /> | ![CI/CD Status](https://img.shields.io/github/actions/workflow/status/jerobas/retro-games-ncurses/release.yml?branch=main) |
+| [web-components](https://github.com/jerobas/web-components) | Arquivos padrões para projetos WEB  | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg" alt="typescript-icon" style="width: 28px; height: 28px;" /> | ![CI/CD Status](https://img.shields.io/github/actions/workflow/status/jerobas/web-components/release.yml?branch=main) |
+| [banco-be-ts](https://github.com/jerobas/banco-be-ts) | Back End de um banco imobiliário | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg" alt="typescript-icon" style="width: 28px; height: 28px;" /> | ![CI/CD Status](https://img.shields.io/github/actions/workflow/status/jerobas/banco-be-ts/release.yml?branch=master) |
+| [banco-fe](https://github.com/jerobas/banco-fe) | Front End de um banco imobiliário | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" alt="javascript-icon" style="width: 28px; height: 28px;" /> | ![CI/CD Status](https://img.shields.io/github/actions/workflow/status/jerobas/banco-fe/release.yml?branch=master) |
+| [lol-queue-app](https://github.com/jerobas/lol-queue-app) | A simple way to accept a League of Legends queue | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" alt="javascript-icon" style="width: 28px; height: 28px;" /> | ![CI/CD Status](https://img.shields.io/github/actions/workflow/status/jerobas/lol-queue-app/release.yml?branch=master) |
 
 
+[//]: # ()
 
 ## 👥 Membros da Organização
 
@@ -58,6 +63,5 @@ Bem-vindo à organização **Jerobas**! Aqui, você pode acompanhar os principai
     <td><a href="https://github.com/suzukino323">Guilherme</a></td>
   </tr>
 </table>
-
 
 ✨ **Acompanhe tudo por aqui e fique por dentro das atualizações!** ✨

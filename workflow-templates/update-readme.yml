@@ -1,0 +1,54 @@
+name: Update Organization Readme
+
+on:
+  push:
+    branches: [ $default-branch ]
+  pull_request:
+    branches: [ $default-branch ]
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    if: github.repository != 'jerobas/.github'
+
+    steps:
+      # Step 1: Check out the repository
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Step 2: Clone the .github repository
+      - name: Clone .github repository
+        run: |
+          git clone https://github.com/jerobas/.github.git
+
+      - name: Clone auto-readme repository
+        run: /
+          git clone https://github.com/jerobas/auto-readme.git
+          cd auto-readme
+
+      # Step 3: Set up Python environment
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x' # Specify your Python version
+
+      # Step 4: Install dependencies (if any)
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      # Step 5: Run the Python file that compares README
+      - name: Run comparison script
+        run: python compare_readme.py  # This is the Python file to compare and modify README if necessary
+        working-directory: auto-readme  # Ensure you're running the Python script in the right directory
+
+      # Step 6: Check for changes and commit if needed
+      - name: Commit and push changes if README was updated
+        run: |
+          cd ../.github
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+          git add readme.md
+          git diff-index --quiet HEAD || git commit -m "Updated README from new commit"
+          git push
+        working-directory: .github
