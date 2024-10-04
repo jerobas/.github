@@ -23,8 +23,8 @@ jobs:
 
       - name: Clone auto-readme repository
         run: |
+          cd global-repo
           git clone https://github.com/jerobas/auto-readme.git
-          cd auto-readme
 
       # Step 3: Set up Python environment
       - name: Set up Python
@@ -35,16 +35,19 @@ jobs:
       # Step 4: Install dependencies (if any)
       - name: Install dependencies
         run: |
+          cd global-repo/auto-readme
           pip install -r requirements.txt
 
       # Step 5: Run the Python file that compares README
       - name: Run comparison script
-        run: python compare_readme.py  # This is the Python file to compare and modify README if necessary
+        run: |
+          cd global-repo/auto-readme
+          python compare_readme.py  # This is the Python file to compare and modify README if necessary
 
       # Step 6: Check for changes and commit if needed
       - name: Commit and push changes if README was updated
         run: |
-          cd ../.github
+          cd global-repo/.github
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Action"
           git add readme.md
