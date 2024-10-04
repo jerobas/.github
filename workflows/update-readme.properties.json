@@ -1,0 +1,14 @@
+{
+  "name": "Jerobas Repo README Updater",
+  "description": "A workflow template to automatically update the README in repositories based on recent changes.",
+  "iconName": "jerboa-icon",
+  "categories": [
+    "Automation",
+    "Documentation"
+  ],
+  "filePatterns": [
+    "README.md$",
+    "^docs/",
+    ".*\\.yml$"
+  ]
+}
