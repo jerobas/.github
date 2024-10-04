@@ -1,6 +1,6 @@
 # 🏢 Jerobas
 
-Bem-vindo à organização **Jerobas**! Aqui, você pode acompanhar os principais repositórios, membros e integrações de CI/CD em andamento. 🚀
+Bem-vindo à organização **Jerobas**! Aqui, você pode acompanhar os principais repositórios, membros e integrações de CI/CD em andamento 🚀
 
 ## 🌟 Repositórios
 
