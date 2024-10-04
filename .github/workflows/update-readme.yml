@@ -48,11 +48,11 @@ jobs:
       - name: Commit and push changes if README was updated
         run: |
           cd global-repo/.github
-          git config --global user.email "joaovitormanolo@gmail.com"
-          git config --global user.name "João Vitor Cezario Sanches"
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
           
           # Add the GITHUB_TOKEN to the remote URL for authentication
-          git remote set-url origin https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/jerobas/.github.git
+          git remote set-url origin https://jaonolo:${{ secrets.PAT_TOKEN }}@github.com/jerobas/.github.git
 
           git add profile/readme.md
           git diff-index --quiet HEAD || git commit -m "Updated README from new commit"
