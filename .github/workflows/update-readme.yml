@@ -50,6 +50,10 @@ jobs:
           cd global-repo/.github
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Action"
+          
+          # Add the GITHUB_TOKEN to the remote URL for authentication
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/jerobas/.github.git
+
           git add profile/readme.md
           git diff-index --quiet HEAD || git commit -m "Updated README from new commit"
           git push
