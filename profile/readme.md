@@ -15,6 +15,7 @@ Bem-vindo à organização **Jerobas**! Aqui, você pode acompanhar os principai
 | [banco-be-ts](https://github.com/jerobas/banco-be-ts) | Back End de um banco imobiliário | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg" alt="typescript-icon" style="width: 28px; height: 28px;" /> | ![CI/CD Status](https://img.shields.io/github/actions/workflow/status/jerobas/banco-be-ts/release.yml?branch=master) |
 | [banco-fe](https://github.com/jerobas/banco-fe) | Front End de um banco imobiliário | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" alt="javascript-icon" style="width: 28px; height: 28px;" /> | ![CI/CD Status](https://img.shields.io/github/actions/workflow/status/jerobas/banco-fe/release.yml?branch=master) |
 | [lol-queue-app](https://github.com/jerobas/lol-queue-app) | A simple way to accept a League of Legends queue | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" alt="javascript-icon" style="width: 28px; height: 28px;" /> | ![CI/CD Status](https://img.shields.io/github/actions/workflow/status/jerobas/lol-queue-app/release.yml?branch=master) |
+| [auto-readme](https://github.com/jerobas/auto-readme) | A software that auto updates our readme accordingly | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-plain.svg" alt="python-icon" style="width: 28px; height: 28px;" /> | ![CI/CD Status](https://img.shields.io/github/actions/workflow/status/jerobas/auto-readme/release.yml?branch=main) |
 
 
 [//]: # ()
@@ -64,4 +65,4 @@ Bem-vindo à organização **Jerobas**! Aqui, você pode acompanhar os principai
   </tr>
 </table>
 
-✨ **Acompanhe tudo por aqui e fique por dentro das atualizações!** ✨teste
+✨ **Acompanhe tudo por aqui e fique por dentro das atualizações!** ✨
