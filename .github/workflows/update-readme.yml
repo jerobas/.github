@@ -19,10 +19,7 @@ jobs:
           mkdir global-repo
           cd global-repo
           git clone https://github.com/jerobas/.github.git
-          echo "Cloning .github repository completed"
-          ls -la .github  # Check if the directory was created and populated
           cd .github
-          echo "Inside .github directory"
           GITHUB_SHA=$(git rev-parse HEAD)
           echo "Latest commit SHA for .github: $GITHUB_SHA"
       
@@ -30,10 +27,7 @@ jobs:
         run: |
           cd global-repo
           git clone https://github.com/jerobas/auto-readme.git
-          echo "Cloning auto-readme repository completed"
-          ls -la auto-readme  # Check if the directory was created and populated
           cd auto-readme
-          echo "Inside auto-readme directory"
           AUTO_README_SHA=$(git rev-parse HEAD)
           echo "Latest commit SHA for auto-readme: $AUTO_README_SHA"
 
@@ -61,11 +55,9 @@ jobs:
           cd global-repo/.github
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Action"
-
-          echo "PAT Token is: $PAT_TOKEN"
           
           # Add the GITHUB_TOKEN to the remote URL for authentication
-          git remote set-url origin https://x-access-token:$PAT_TOKEN@github.com/jerobas/.github.git
+          git remote set-url origin https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/jerobas/.github.git
 
           git add profile/readme.md
           git diff-index --quiet HEAD || git commit -m "Updated README from new commit"
