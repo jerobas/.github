@@ -64,4 +64,4 @@ Bem-vindo à organização **Jerobas**! Aqui, você pode acompanhar os principai
   </tr>
 </table>
 
-✨ **Acompanhe tudo por aqui e fique por dentro das atualizações!** ✨
+✨ **Acompanhe tudo por aqui e fique por dentro das atualizações!** ✨teste
