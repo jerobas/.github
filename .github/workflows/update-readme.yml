@@ -20,11 +20,13 @@ jobs:
           mkdir global-repo
           cd global-repo
           git clone https://github.com/jerobas/.github.git
+          git rev-parse HEAD  # This prints the latest commit SHA1
 
       - name: Clone auto-readme repository
         run: |
           cd global-repo
           git clone https://github.com/jerobas/auto-readme.git
+          git rev-parse HEAD  # This prints the latest commit SHA1
 
       # Step 3: Set up Python environment
       - name: Set up Python
