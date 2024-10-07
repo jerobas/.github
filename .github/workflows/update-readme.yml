@@ -19,16 +19,23 @@ jobs:
           mkdir global-repo
           cd global-repo
           git clone https://github.com/jerobas/.github.git
+          echo "Cloning .github repository completed"
+          ls -la .github  # Check if the directory was created and populated
+          cd .github
+          echo "Inside .github directory"
           GITHUB_SHA=$(git rev-parse HEAD)
-          echo "Latest commit SHA for .github: $GITHUB_SHA"  # Explicitly print the SHA
+          echo "Latest commit SHA for .github: $GITHUB_SHA"
       
-      # Step 3: Clone auto-readme repository
       - name: Clone auto-readme repository
         run: |
           cd global-repo
           git clone https://github.com/jerobas/auto-readme.git
+          echo "Cloning auto-readme repository completed"
+          ls -la auto-readme  # Check if the directory was created and populated
+          cd auto-readme
+          echo "Inside auto-readme directory"
           AUTO_README_SHA=$(git rev-parse HEAD)
-          echo "Latest commit SHA for auto-readme: $AUTO_README_SHA"  # Explicitly print the SHA
+          echo "Latest commit SHA for auto-readme: $AUTO_README_SHA"
 
       # Step 3: Set up Python environment
       - name: Set up Python
