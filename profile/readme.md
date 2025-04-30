@@ -13,7 +13,7 @@ Bem-vindo à organização **Jerobas**! Aqui, você pode acompanhar os principai
 | [banco-fe](https://github.com/jerobas/banco-fe) | Front End de um banco imobiliário | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" alt="javascript-icon" style="width: 28px; height: 28px;" /> | - |
 | [queemo](https://github.com/jerobas/queemo) | Uma forma simples e rápida de aceitar partidas e se comunicar. O VOIP do League Of Legends chegou! | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg" alt="typescript-icon" style="width: 28px; height: 28px;" /> | ![CI/CD Status](https://img.shields.io/github/actions/workflow/status/jerobas/queemo/release.yml?branch=master) |
 | [retro-games-ncurses](https://github.com/jerobas/retro-games-ncurses) | Retro Games em C | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-plain.svg" alt="c-icon" style="width: 28px; height: 28px;" /> | - |
-| [voip-server](https://github.com/jerobas/voip-server) | - | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg" alt="typescript-icon" style="width: 28px; height: 28px;" /> | - |
+| [voip-server](https://github.com/jerobas/voip-server) | O backend responsável por fazer o Queemo funcionar! | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg" alt="typescript-icon" style="width: 28px; height: 28px;" /> | - |
 | [web-components](https://github.com/jerobas/web-components) | Arquivos padrões para projetos WEB  | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg" alt="typescript-icon" style="width: 28px; height: 28px;" /> | - |
 
 
