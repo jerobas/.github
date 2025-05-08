@@ -1,9 +1,8 @@
 name: Upload Images to AWS
 
+# This allows the workflow to be used as a reusable workflow
 on:
-  push:  # every commit, all branches
-    paths:
-      - 'public/images/**'
+  workflow_call:
 
 jobs:
   upload-images:
