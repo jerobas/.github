@@ -1,0 +1,40 @@
+name: Upload Images to AWS
+
+on:
+  push:  # every commit, all branches
+    paths:
+      - 'public/images/**'
+
+jobs:
+  upload-images:
+    runs-on: ubuntu-latest
+    if: ${{ github.repository != 'owner/.github' }}  # optional safeguard
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Check if /public/images exists
+        id: check_images
+        run: |
+          if [ -d "./public/images" ]; then
+            echo "exists=true" >> $GITHUB_OUTPUT
+          else
+            echo "exists=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Upload images via SCP
+        if: steps.check_images.outputs.exists == 'true'
+        env:
+          AWS_HOST: ${{ secrets.AWS_HOST }}
+          AWS_USER: ${{ secrets.AWS_USER }}
+          AWS_KEY: ${{ secrets.AWS_KEY }}
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y openssh-client
+
+          mkdir -p ~/.ssh
+          echo "$AWS_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+
+          scp -r -o StrictHostKeyChecking=no public/images/* "$AWS_USER@$AWS_HOST:~/images"

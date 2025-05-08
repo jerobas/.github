@@ -1,0 +1,12 @@
+{
+    "name": "AWS Image Uploader",
+    "description": "A GitHub Actions workflow that uploads images from the /public/images folder to an AWS server on every commit.",
+    "iconName": "upload-cloud",
+    "categories": [
+        "Deployment",
+        "Automation"
+    ],
+    "filePatterns": [
+        "^public/images/.*\\.(png|jpe?g|gif|svg|webp)$"
+    ]
+}
