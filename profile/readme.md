@@ -8,6 +8,7 @@ Bem-vindo à organização **Jerobas**! Aqui, você pode acompanhar os principai
 
 | Nome do Repositório | Descrição | Linguagem Principal | CI/CD |
 | --- | --- | :---: | :---: |
+| [arch-repo](https://github.com/jerobas/arch-repo) | - | - | - |
 | [auto-readme](https://github.com/jerobas/auto-readme) | A software that auto updates our readme accordingly | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-plain.svg" alt="python-icon" style="width: 28px; height: 28px;" /> | - |
 | [banco-be-ts](https://github.com/jerobas/banco-be-ts) | Back End de um banco imobiliário | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg" alt="typescript-icon" style="width: 28px; height: 28px;" /> | ![CI/CD Status](https://img.shields.io/github/actions/workflow/status/jerobas/banco-be-ts/release.yml?branch=master) |
 | [banco-fe](https://github.com/jerobas/banco-fe) | Front End de um banco imobiliário | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg" alt="typescript-icon" style="width: 28px; height: 28px;" /> | ![CI/CD Status](https://img.shields.io/github/actions/workflow/status/jerobas/banco-fe/release.yml?branch=master) |
